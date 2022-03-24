@@ -1,0 +1,5 @@
+ProductionMachineLearning/data
+ProductionMachineLearning/training_checkpoints
+ProductionMachineLearning/saved_model
+ProductionMachineLearning/logs
+ImageUnderstandingOnGoogleCloud/LinearModelEstimator/mnist
