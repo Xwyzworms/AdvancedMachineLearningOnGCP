@@ -1,0 +1,105 @@
+{
+  "main": {
+    "id": "9c565ec7a2ae5070",
+    "type": "split",
+    "children": [
+      {
+        "id": "56ce076a6a0147d3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ImageUnderstandingNotes.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "0eb565a9ebc7e45a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ImageUnderstandingNotes.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "84e4e9a462ae65d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9665238495a397f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e513bc3d169ef9c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8a5cbd1de163d96a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d5fb859da6b94439",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e921f58f3dcb5d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02d591e8935f776a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ImageUnderstandingNotes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0eb565a9ebc7e45a",
+  "lastOpenFiles": [
+    "ImageUnderstandingNotes.md"
+  ]
+}
