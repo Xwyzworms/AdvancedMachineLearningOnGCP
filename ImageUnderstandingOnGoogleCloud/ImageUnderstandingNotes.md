@@ -11,3 +11,49 @@
 3. Softmax Function pada dasaranya adalah ***Mengubah nilai Floating values menjadi probabilities Ranging dari m - n*** Tapi ga merubah relative Ordernya ( Atau Urutan sebelumnya dengan cara melakukan **Ekponensiasi dan normalisasi pada inputnya**). Dimana eksponensiasi berarti **Memperbesar BOBOT dari floating point tersebut **
 4. Loss Function --> Memberitahukan **Kualitas Dari Solusi/prediksi yang dilakukan oleh model** Semakin Kecil semakin baik
 5. Dude ini Note penting, sebelum lu melakukan Komputasi **Mengenai Deep Neural net** Pastikan Simpler modelnya udah ga bisa dipake ya, **even sudah berusaha menggunakan feature engineering** Apalagi ketika datasetnya **Non Linear** 
+6. So What is Dropout , intinya cuman **Mencegah Overfitting** hal ini dilakukan dikarenakan **Model deeplearning Tend to memorizing** dan **Dropout** adalah salah satu cara mencegah hal tersebut terjadi ya
+
+### Convolution Neural Networks
+1. 
+
+
+### Data Scarcity
+
+Semakin besar **Kompleksitas Model** Semakin Banyak **Data** yang dibutuhkan 
+
+Parameter sebuah Model, **Linear misalnya** Dalam masalah Citra dapat dihitung sebagai berikut
+Height * Width * Weight+ bias
+
+Kalau menghitung Parameter dari Conv2D cukup dengan
+**Filters x  (Kernelsize x kernelsize x depth )+ bias x depth  **
+
+Solusi dari Data Scarcity adalah
+- Data Augmentasi
+	Bisa melakukan beberapa hal sebagai berikut
+	1. Blur
+	2. Resize
+	3. Crop
+	4. Flip
+	5. Hue
+	6. Brightness
+
+But pay attetion kepada **Augmentasi yang dilakukan**, bisa aja lu melakukan augmentasi, dan ternyata malah ngebuat **Model mislead** COntohnya sperti berikut
+![[Pasted image 20220327170518.png]]
+So apapun itu, selama kamu bekejra dengan augmentasi, pastikan hal hal yang hendak dilakukan **TELAH SESUAI** dan tidak menyebabkan **Misleading**. Btw kalau misalnya mau melakukan **Inference saat Decision Time** its not a good practice though, although **It's** good for **Boosting performance** But it's bad.
+
+**Kalau mau lakuin Augmentasi, ada baiknya langsung dari input_fn ( Run time ) dari pada buatnya manual ( Stroge cost increase)**
+
+
+
+
+
+
+pada dasarnya, Banyak tools yang tersedia untuk melakukan training di cloud.
+Gunakan Kalau emang punya banyak resource aja ( Ga masalah sama duid )
+- Cloud Vision --> Kalau task nya mudah kek klasifikasi hal hal umum( Dan lu ga punya dataset)
+- Auto ML --> Kalau butuh custom label, yang memang lebih spesifik
+- Buat model sendiri --> Pake tensorflow , cost low tapi time consuming ( Gw prefer ini sih )
+![[Pasted image 20220327180928.png]]
+
+
+Transfer Learning
