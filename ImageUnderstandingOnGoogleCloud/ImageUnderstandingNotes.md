@@ -2,7 +2,7 @@
 
 ## Structured vs Unstrucuted Data
 1. 8 MP camera dapat diartikan membuat **Sebuah gambar** dengan 8 **Million** Piksel , dan tentu hal ini dapat meningkantakna Input **Size*** Dari ML Modelnya sendiri which *Leads to* Inssufficient computing power dan juga **Long Training**
-2. Take a look at this picture ![[Pasted image 20220324091031.png]] Apabila melihat dari gambar, **Model Machine learning** Bakalan melakukan komparasi Piksel piksel, jadi **Kedua gambar tersebut berbeda**
+2. Take a look at this picture ![ll](Pasted image 20220324091031.png) Apabila melihat dari gambar, **Model Machine learning** Bakalan melakukan komparasi Piksel piksel, jadi **Kedua gambar tersebut berbeda**
 3. Dalam Melakukan komparasi kesamaan antar kedua Vektor  **bisa bekerja lebih baik** pada **Structured data**. Namun, ketika dihadapkan dengan **Unstructured data** Become ga baik.  karena kita  **Membadingkan Piksel images**. Take Look Contoh gambar sebelumnya deh . Ketika kamu coba melakukan ZOOM in, maka nanti piksel nya berubah ya gak ? Nah ketika pikselnya berubah maka tidak bisa lagi tuh kamu melakukan yang namanya ***Euclidean distnace*** Hasilnya bakalan **Unreliable**.
 4. ***Semakin Kecil Nilai Euclidean Distance*** Semakin **MIRIP**
 5. VISI KOMPUTER Means --> **BAGAIMANA kita modelling Hubungan antara piksel ?**
@@ -40,7 +40,7 @@ Solusi dari Data Scarcity adalah
 	6. Brightness
 
 But pay attetion kepada **Augmentasi yang dilakukan**, bisa aja lu melakukan augmentasi, dan ternyata malah ngebuat **Model mislead** COntohnya sperti berikut
-![[Pasted image 20220327170518.png]]
+![Yoman](Pasted image 20220327170518.png)
 So apapun itu, selama kamu bekejra dengan augmentasi, pastikan hal hal yang hendak dilakukan **TELAH SESUAI** dan tidak menyebabkan **Misleading**. Btw kalau misalnya mau melakukan **Inference saat Decision Time** its not a good practice though, although **It's** good for **Boosting performance** But it's bad.
 
 **Kalau mau lakuin Augmentasi, ada baiknya langsung dari input_fn ( Run time ) dari pada buatnya manual ( Stroge cost increase)**
@@ -51,7 +51,7 @@ Gunakan Kalau emang punya banyak resource aja ( Ga masalah sama duid )
 - Cloud Vision --> Kalau task nya mudah kek klasifikasi hal hal umum( Dan lu ga punya dataset)
 - Auto ML --> Kalau butuh custom label, yang memang lebih spesifik
 - Buat model sendiri --> Pake tensorflow , cost low tapi time consuming ( Gw prefer ini sih )
-![[Pasted image 20220327180928.png]]
+![ll](Pasted image 20220327180928.png)
 
 ### Transfer Learning
 
@@ -73,14 +73,14 @@ Misal kita punya layer 3,4,5,6,7,8, dan 9 itu layer **Batch Normalization** maka
 
 ### Residual Networks
 Konsep resnet Ditujukan untuk mengatasi **Vanishing Gradient** maksudnya adalah untuk layer yang dekat dengan input say layer **2, 3 dan 4** dari 50 layer, memiliki Dampak **Gradient** yang kecil. Sehingga ya **Layer tersebut** learning nya ga banyak dan mungkin bisa saja ga di update. Resnet konsepnya **Beda**. Instead belajar mapping **input** ke **Output**, **Resnet mempelajari perbedaan antara output dengan original inputs**. 
-![[Pasted image 20220329060315.png]]
+![ll](Pasted image 20220329060315.png)
 Yep jadi pada akhirnya model yang belajar tadi akan lebih robust dan **Dapat meningkatkan learning** lebih baik lagi even ketika dibuat **Deep layer** karena pada dasarnya, **Resnet mempelajari perbedaan antara output dengan original inputs** bukan mapping **Dari inputs ke output**
 
 ### Neural Archicture Search
 Konsep untuk **Automasi pembuatan  network model**
 **Reinforcment learning digunakan untuk desain  neural networks**
 
-![[Pasted image 20220329061036.png]]
+![lo](Pasted image 20220329061036.png)
 
 intinya adalah **Controller** Probability training arhcitecture A akan lebih besar jika **Arsitektur** tersebut memberikan **Output** yang baik
 
